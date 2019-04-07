@@ -1,0 +1,44 @@
+.home {
+  .page-section {
+    height: 700px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section-inner {
+    }
+
+    .inner0 {
+      background: rgba(99, 62, 62, 0.5);
+    }
+
+    .inner1 {
+      background: rgba(89, 68, 98, 0.57);
+      align-self: start;
+    }
+
+    .inner2 {
+      background: rgba(76, 115, 82, 0.5);
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .section-inner {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .section-inner {
+    width: 35%;
+    margin: 0 50px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .section-inner {
+    width: 25%;
+    margin: 0 100px;
+  }
+}
