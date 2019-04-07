@@ -1,0 +1,25 @@
+.home {
+  .page-section {
+    height: 700px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section-inner {
+      margin: 0 100px;
+    }
+
+    .inner0 {
+      background: rgba(99, 62, 62, 0.5);
+    }
+
+    .inner1 {
+      background: rgba(89, 68, 98, 0.57);
+      align-self: start;
+    }
+
+    .inner2 {
+      background: rgba(76, 115, 82, 0.5);
+    }
+  }
+}
