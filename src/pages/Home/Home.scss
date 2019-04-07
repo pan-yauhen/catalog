@@ -6,7 +6,6 @@
     background-size: cover;
 
     .section-inner {
-      margin: 0 100px;
     }
 
     .inner0 {
@@ -21,5 +20,25 @@
     .inner2 {
       background: rgba(76, 115, 82, 0.5);
     }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .section-inner {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .section-inner {
+    width: 35%;
+    margin: 0 50px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .section-inner {
+    width: 25%;
+    margin: 0 100px;
   }
 }

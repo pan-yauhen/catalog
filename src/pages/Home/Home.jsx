@@ -6,11 +6,11 @@ import Button from "reactstrap/es/Button";
 export const Home = () =>
   <div className="home d-flex flex-column text-white w-100 text-center">
       {HomeItems.map(i => (
-        <div className="px-5 page-section d-flex flex-column align-items-end" style={
+        <div className="px-lg-5 page-section d-flex flex-column align-items-end" style={
             {backgroundImage: `url(${require("../../mocks/images/"+i.image)})`}
         }>
             <div className={
-                `section-inner inner${i.id} d-flex flex-column justify-content-center h-100 w-25 px-3`
+                `section-inner inner${i.id} d-flex flex-column justify-content-center h-100 px-3`
             }>
                 <h3 className="font-weight-bold">
                     {i.productName}
