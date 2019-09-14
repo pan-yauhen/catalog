@@ -17,7 +17,8 @@ export const Home = () =>
           <Button
             tag={Link}
             to={'catalog'}
-            outline color={'info'}
+            outline
+            color={'info'}
             className="align-self-center text-white border-white rounded-0 w-75 mt-5"
           >
             ПОЛУЧИТЬ
