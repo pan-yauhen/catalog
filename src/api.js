@@ -1,0 +1,1 @@
+export const getCollectionData = ajax => ajax.getJSON("https://catalog-artishoes.herokuapp.com/catalog");
