@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import { Header } from './Header/Header';
-import { Main } from './Main/Main';
-import { BrowserRouter } from 'react-router-dom';
-import { Footer } from './Footer/Footer';
-import { wrapRootEpic } from '../epics/wrap-root-epic';
-import { rootEpic } from '../epics';
-import { configureStore } from './store';
+import React, {Component} from 'react';
+import {Provider} from 'react-redux';
+import {Header} from './Header/Header';
+import {Main} from './Main/Main';
+import {BrowserRouter} from 'react-router-dom';
+import {Footer} from './Footer/Footer';
+import {wrapRootEpic} from '../epics/wrap-root-epic';
+import {rootEpic} from '../epics';
+import {configureStore} from './store';
 
 class App extends Component {
   render() {
@@ -18,9 +18,9 @@ class App extends Component {
       <Provider store={store}>
         <BrowserRouter>
           <div className="App">
-              <Header />
-              <Main />
-              <Footer />
+            <Header/>
+            <Main/>
+            <Footer/>
           </div>
         </BrowserRouter>
       </Provider>
