@@ -10,19 +10,6 @@ import {Button, Modal, ModalBody} from 'reactstrap';
 import './Catalog.scss';
 
 export class CatalogUI extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      isOpen: false
-    }
-  }
-
-  toggleModalWindowVisibility = () => {
-    this.setState(prevState => ({
-      isOpen: !prevState.isOpen
-    }))
-  }
-
   componentDidMount() {
     const {fetchCollection} = this.props;
     fetchCollection();
@@ -30,7 +17,6 @@ export class CatalogUI extends Component {
 
   render() {
     const {collectionList } = this.props;
-    const {isOpen} = this.state
     return (
       <div className="catalog d-flex">
         <CatalogSidebar />

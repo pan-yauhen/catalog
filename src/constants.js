@@ -1,0 +1,1 @@
+export const collectionImageUrl = 'https://thumb.cloud.mail.ru/weblink/thumb/xw1/5mJA/bRp8pHUmL/';
