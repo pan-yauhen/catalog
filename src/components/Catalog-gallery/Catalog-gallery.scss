@@ -1,0 +1,27 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    .gallery-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.3;
+        background-color: rgba(99, 62, 62, 0.5);
+        font-size: 5rem;
+        grid-row-start: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .gallery-image {
+        width: 100%;
+        grid-column: span 2;
+        grid-row: span 2;
+        &:not(.large-image) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    }
+}

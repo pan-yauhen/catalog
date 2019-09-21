@@ -4,10 +4,10 @@ import {Modal, ModalBody} from 'reactstrap';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './ModalWindow.scss';
 
-export const ModalWindow = ({isOpen, toggleModalWindowVisibility, id}) => (
+export const ModalWindow = ({isOpen, toggle, id}) => (
   <Modal
     isOpen={isOpen}
-    toggle={toggleModalWindowVisibility}
+    toggle={toggle}
   >
     <ModalBody>
       <div className="modal-description__fade"/>
