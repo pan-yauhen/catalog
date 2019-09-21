@@ -6,8 +6,9 @@ import HomeItems from '../../mocks/HomeItems';
 
 export const Home = () =>
   <div className="home d-flex flex-column text-white w-100 text-center">
-    {HomeItems.map(i => (
+    {HomeItems.map((i, index) => (
       <div
+        key={index}
         className="px-lg-5 page-section d-flex flex-column align-items-end"
         style={{backgroundImage: `url(${require("../../mocks/images/" + i.image)})`}}
       >
