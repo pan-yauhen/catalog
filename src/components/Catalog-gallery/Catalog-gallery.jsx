@@ -13,7 +13,7 @@ export const CatalogGallery =({collectionList, filtersList})=> {
 
     useEffect(()=>{
         setProgress(false)
-    }, [])
+    }, []);
 
     useEffect(()=>{
         if(filtersList.length) {
