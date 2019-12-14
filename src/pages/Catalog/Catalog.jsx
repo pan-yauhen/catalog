@@ -3,10 +3,10 @@ import {connect} from 'react-redux';
 import {
   fetchCollection as fetchCollectionAction,
 } from '../../actions/collection';
-import {CatalogGallery} from '../../components/Catalog-gallery/Catalog-gallery'
-import {CatalogSidebar} from '../../components/Catalog-sidebar/Catalog-sidebar'
+import { addFilter as addFilterAction } from '../../actions/filters';
+import {CatalogGallery} from '../../components/Catalog-gallery/Catalog-gallery';
+import {CatalogSidebar} from '../../components/Catalog-sidebar/Catalog-sidebar';
 
-import {Button, Modal, ModalBody} from 'reactstrap';
 import './Catalog.scss';
 
 export class CatalogUI extends Component {
@@ -16,23 +16,23 @@ export class CatalogUI extends Component {
   }
 
   render() {
-    const {collectionList } = this.props;
+    const {collectionList, filtersList, addFilter} = this.props;
     return (
       <div className="catalog d-flex">
-        <CatalogSidebar />
-        <CatalogGallery collectionList={collectionList}  />
+        <CatalogSidebar addFilter={addFilter} filtersList={filtersList} />
+        <CatalogGallery collectionList={collectionList} filtersList={filtersList} />
       </div>);
   }
 }
 
-
-const mapStateToProps = ({collection: {collectionList}}) => ({
+const mapStateToProps = ({collection: {collectionList}, filters: {filtersList}}) => ({
   collectionList,
+  filtersList,
 });
 
 const mapDispatchToProps = {
   fetchCollection: fetchCollectionAction,
+  addFilter: addFilterAction,
 }
-
 
 export const Catalog = connect(mapStateToProps, mapDispatchToProps)(CatalogUI)
