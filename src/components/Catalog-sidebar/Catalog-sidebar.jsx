@@ -15,7 +15,7 @@ export const CatalogSidebar =()=> {
       ]
 
     return (
-    <aside className="catalog-sidebar flex-grow-1 d-flex flex-column w-100">
+    <aside className="catalog-sidebar d-flex flex-column">
     {sidebarItems.map(
         (container, index) => (
         <div className="d-flex flex-column mx-5 mt-5" key={index}>
